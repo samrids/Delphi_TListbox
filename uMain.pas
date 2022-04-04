@@ -138,7 +138,7 @@ end;
 
 procedure TForm2.ListBox1DblClick(Sender: TObject);
 begin
-  if ListBox1.ItemIndex > 0 then
+  if ListBox1.ItemIndex > -1 then
   begin
     ListBox2.items.add(ListBox1.items[ListBox1.ItemIndex]);
     ListBox1.Items.Delete(ListBox1.ItemIndex);
@@ -148,7 +148,7 @@ end;
 
 procedure TForm2.ListBox2DblClick(Sender: TObject);
 begin
-  if ListBox2.ItemIndex > 0 then
+  if ListBox2.ItemIndex > -1 then
   begin
     ListBox1.items.add(ListBox2.items[ListBox2.ItemIndex]);
     ListBox2.Items.Delete(ListBox2.ItemIndex);
